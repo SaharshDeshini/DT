@@ -1,9 +1,8 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://dtbk.onrender.com",
+  baseURL: "https://dtbk.onrender.com/api",
   withCredentials: true,
-  headers: { "Content-Type": "application/json" },
 });
 
 api.interceptors.response.use(
